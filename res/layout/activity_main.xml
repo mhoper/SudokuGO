@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context="com.legendleo.sudokugo.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/toggleTips"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/tb_tips"
+                android:checked="false"
+                android:textOff="Tips"
+                android:textOn="Tips"
+                android:textColor="#ffffff" />
+
+            <ToggleButton
+                android:id="@+id/toggleEasyHard"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/tb_easyhard"
+                android:checked="true"
+                android:textOff="Hard"
+                android:textOn="Easy"
+                android:textColor="#ffffff" />
+            
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/button"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="14dp"
+                android:text="Restart"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.legendleo.sudokugo.GameView
+        android:id="@+id/gameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/key_1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key_2"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key_3"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/key_4"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key_5"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="5" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/key_6"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/key_7"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key_8"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key_9"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/key_c"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_c"
+                android:text="C" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="made by S.Q."
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

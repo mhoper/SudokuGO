@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="sudoku_background">#80f0e999</color>
+	<color name="sudoku_hilite">#ffffffff</color>
+	<color name="sudoku_light">#64c6d4ef</color>
+	<color name="sudoku_dark">#6456648f</color>
+	<color name="originalTileBackgroundPaint">#ffeeebe8</color>    
+	<color name="tileBackgroundPaint">#ffadd8e6</color>
+	<color name="wrongNumber">#ffCD3333</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\n
+        简单说明~~\n
+        C：数字清除键\n
+        1-9：数字输入键\n
+        Tips：开启后点击方格后会有备选提示\n
+        Restart：开始新的游戏\n
+        Easy/Hard：可选择简单或困难级别\n\n" />
+
+</LinearLayout>
